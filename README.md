@@ -1,2 +1,2 @@
-# FernWebDev
+# fernWebDev
 The portfolio website.
