@@ -5,6 +5,7 @@ html, body {
 
 html {
     background-color: rgb(10, 20, 35);
+    color: white;
 }
 
 .sidebar {
@@ -33,12 +34,25 @@ html {
 .center {
     text-align: center;
     display: inline-block;
+    padding-left: 20rem;
+    padding-top: 10rem;
+}
+
+.current{
+    background-color: rgb(133, 182, 197);
+}
+
+.left {
+    text-align: left;
+}
+
+.pad {
+    padding-left: 20rem;
+    padding-right: 5rem;
 }
 
 #title {
     height: 100%;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
