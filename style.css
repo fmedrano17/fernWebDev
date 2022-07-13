@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+html {
+    background-color: rgb(10, 20, 35);
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    text-align: right;
+  }
+
+.sidebar a:hover {
+    color: rgb(50, 50, 50);
+}
+
+.center {
+    text-align: center;
+    display: inline-block;
+}
+
+#title {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
