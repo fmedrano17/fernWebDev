@@ -1,34 +1,156 @@
 html, body {
     height: 100%;
     font-family: sans-serif;
+    margin: 0;
+    background-image: url("images/blurBG.jpg");
+    background-size: auto;
 }
 
 html {
-    background-color: rgb(10, 20, 35);
-    color: white;
-}
-
-.sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: white;
-    padding-top: 60px;
+    color: black;
 }
 
-.sidebar a {
-    padding: 8px 32px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: black;
-    display: block;
-    text-align: right;
-  }
+footer {
+    background-color: white;
+    padding: 2em;
+}
 
-.sidebar a:hover {
-    color: rgb(50, 50, 50);
+.github {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1em;
+    border: none;
+    border-radius: 10em;
+    transition: 0.3s;
+}
+
+.github:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    padding: 0 2em;
+}
+
+.footer a:hover {
+    color: gray;
+}
+
+footer p {
+    text-align: center;
+}
+
+.board {
+    margin: 1em;
+    padding: 4em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.board h1 {
+    padding-bottom: 1em;
+    font-style: italic;
+}
+
+.board p {
+    line-height: 2em;
+}
+
+.board i {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+}
+
+.skills p {
+    margin-left: 0px;
+    margin-right: 1em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: white;
+    border-radius: 10em;
+    transition: 0.3s;
+}
+
+.skills p:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.carousel p {
+    flex: 0 0 auto;
+}
+
+.collapse {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    border: none;
+}
+
+.collapse:hover {
+    font-weight: 600;
+    color: gray;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuBar {
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    max-height: 0;
+    background-color: white;
+    transition: max-height 0.2s ease-out;
+}
+
+.menuBar a {
+    color: black;
+    text-decoration: none;
+}
+
+:not(.current).page:hover{
+    color: gray;
+}
+
+.header {
+    justify-content: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.headers {
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+}
+
+.hItem {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
 }
 
 .center {
@@ -39,21 +161,55 @@ html {
 }
 
 .current{
-    background-color: rgb(133, 182, 197);
+    font-weight: 600;
 }
 
-.left {
-    text-align: left;
+.mirror {
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
 }
 
-.pad {
-    padding-left: 20rem;
-    padding-right: 5rem;
+.social {
+    display: flex;
+}
+
+.social a {
+    padding: 1em;
+}
+
+h2.indexI {
+    font-weight: 100;
 }
 
 #title {
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
+
+#spin {
+    position: absolute;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    animation: rotation 20s infinite linear;
+}
+
+#extra {
+    padding-bottom: 2.5em;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
