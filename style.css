@@ -74,6 +74,7 @@ footer p {
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .skills p {
@@ -136,6 +137,7 @@ footer p {
 .header {
     justify-content: center;
     background-color: white;
+    padding: 0.5em;
     display: flex;
     align-items: center;
 }
